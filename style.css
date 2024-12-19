@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Exo 2", serif;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(18,15,11,1) 14%, rgba(68,46,88,1) 56%, rgba(22,16,18,1) 81%);
+}
+
+a {
+    text-decoration: none;
+}
+
+div#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #120f0b;
+    padding: 1em 4em;
+    justify-content: space-between;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+div#navbar div#logo {
+    text-align: center;
+    font-size: 1.9em;
+}
+
+div#navbar div#logo a {
+    color: #CF9FFF;
+}
+
+div#navbar div#logo a span {
+    color: #702963;
+}
+
+div#navbar div#navlist {
+    flex-wrap: 2;
+}
+
+div#navbar div#navlist ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+div#navbar div#navlist ul li {
+    padding: 0.3em 1.1em;
+    font-size: 1.3em;
+}
+
+div#navbar div#navlist ul li.active a {
+    border-bottom: 2px solid #DA70D6;
+    box-shadow: 0 1px #DA70D6;
+    color: #CF9FFF;
+}
+
+
+div#navbar div#navlist ul li a {
+    color: #DA70D6;
+}
+
+div#navbar div#navlist ul li a:hover {
+    border-bottom: 2px solid #DA70D6;
+    box-shadow: 0 1px #DA70D6;
+    color: #CF9FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+div#home {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#home div#info {
+    display: flex;
+    flex-direction: column;
+    margin: 9em 3em;
+    margin-right: 0;
+}
+
+div#home-img {
+    display: flex;
+    margin: 7em 8em;
+}
+
+div#home-img div.img-box {
+    background: url(./Images/img3-removebg-preview.png) no-repeat center center/cover;
+    width: 18em;
+    height: 18em;
+    border: 2px solid transparent;
+    box-shadow: 4px 4px 30px #DA70D6;
+    border-radius: 50%;
+}
+
+div#home div#info div.text h1 {
+    font-weight: bolder;
+    font-size: 2.6em;
+    color: #702963;
+    padding-bottom: 0.3em;
+    letter-spacing: 0.01em;
+}
+
+div#home div#info div.text h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #CF9FFF;
+    padding-bottom: 0.7em;
+    letter-spacing: 0.01em;
+}
+
+div#home div#info div.text p {
+    text-align: justify;
+    font-size: 1.1em;
+    padding-bottom: 1.5em;
+    word-spacing: 0.2em;
+    line-height: 1.6em;
+    color: #fff;
+}
+
+div#home div#info div.sub-section {
+    display: flex;
+}
+
+div#home div#info div.sub-section div.btn {
+    border: 2px solid #CF9FFF;
+    border-radius: 1em;
+    margin: 0.2em 0.2em;
+    margin-right: 1.3em;
+    background-color: transparent;
+}
+
+div#home div#info div.sub-section div.btn:hover {
+    border-color: #DA70D6;
+    box-shadow: 3px 3px 4px #DA70D6;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+div#home div#info div.sub-section div.btn p {
+    text-align: center;
+    padding: 0.5em 1em;
+    color: #CF9FFF;
+}
+
+div#home div#info div.sub-section div.sub-icons {
+    border: 2px solid transparent;
+    padding: 0.7em;
+    margin: 0 0.6em;
+    border-radius: 100%
+}
+
+div#home div#info div.sub-section div.sub-icons:hover {
+    border-color: #DA70D6;
+    border-width: 2px;
+    box-shadow: 1px 1px 2px #DA70D6;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+div#home div#info div.sub-section div.sub-icons i {
+    font-size: 1em;
+    color: #CF9FFF;
+}
+
+div#skills {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 3em;
+}
+
+div#skills h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+div#skills div.myskills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+div#skills div.myskills div label.sk p {
+    font-size: 1.8em;
+    padding: 1em 0;
+    color: #CF9FFF;
+}
+
+div#skills div.myskills div label.sk input {
+    width: 15.625em;
+    cursor: pointer;
+}
+
+div#skills div.myskills div label.sk p span i#html {
+    color: #e34f26;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#css {
+    color: #21759B;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#bs {
+    color: #0d6efd;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#js {
+    color: #F0DB4F;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#py {
+    color: #FFD43B;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#java {
+    color: #FFA518;
+    padding: 0 0.3em;
+}
+
+div#skills div.myskills div label.sk p span i#mysql {
+    color: #00758F;
+    padding: 0 0.3em;
+}
+
+div#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 3em;
+}
+
+div#projects h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+div#projects div#cards-sec {
+    margin: 5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div#projects div#cards-sec div.card {
+    border: 2px solid #CF9FFF;
+    padding: 2em;
+    height: 26em;
+    width: 15em;
+    border-radius: 2em;
+}
+
+div#projects div#cards-sec div.card:hover {
+    border-color: #DA70D6;
+    box-shadow: 5px 7px 9px #DA70D6;
+    transition: all 0.2s ease-in-out;
+}
+
+div#projects div#cards-sec div.card div.image {
+    background: url(./Images/card.jpg) no-repeat center center/cover;
+    height: 10em;
+    width: 15em;
+    border-radius: 0.5em;
+}
+
+div#projects div#cards-sec div.card h3 {
+    padding: 1em 0;
+    font-size: 1.3em;
+    color: #DA70D6;
+}
+
+div#projects div#cards-sec div.card h3 span {
+    padding: 0.3em;
+}
+
+
+div#projects div#cards-sec div.card p {
+    text-align: justify;
+    padding-bottom: 1.5em;
+    color: #CF9FFF;
+    line-height: 1.3em;
+}
+
+div#projects div#cards-sec div.card div.btn {
+    border: 2px solid #CF9FFF;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    width: 6em;
+    background-color: transparent;
+}
+
+div#projects div#cards-sec div.card div.btn a{
+    text-align: center;
+    color: #CF9FFF;
+}
+
+div#projects div#cards-sec div.card div.btn:hover {
+    border-color: #DA70D6;
+    box-shadow: 3px 3px 4px #DA70D6;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+div#contact {
+    display: flex;
+    flex-direction: column;
+    margin: 5em 3em;
+}
+
+div#contact h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+div#contact div.contact-me {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 1em;
+}
+
+div#contact div.contact-me div.image-sec {
+    height: 24em;
+    width: 23em;
+    background: url(./Images/robot1.png) no-repeat center center/cover;
+}
+
+div#contact div.contact-me div.info-sec {
+    height: 25em;
+    width: 24em;
+    padding: 2em;
+    margin: 0 8em;
+}
+
+div#contact div.contact-me div.info-sec form {
+    display: flex;
+    flex-direction: column;
+}
+
+div#contact div.contact-me div.info-sec form input {
+    padding: 0.8em 1em;
+    margin: 1em 0;
+    width: 20em;
+    background-color: transparent;
+    font-size: 1em;
+    border-radius: 2em;
+    color: #CF9FFF;
+}
+
+div#contact div.contact-me div.info-sec form input:hover {
+    border-color: #DA70D6;
+    box-shadow: 3px 4px 5px #DA70D6;
+    transition: all 0.2s ease-in-out;
+}
+
+div#contact div.contact-me div.info-sec form textarea {
+    padding: 1em;
+    margin: 1em 0;
+    width: 20em;
+    background-color: transparent;
+    font-size: 1em;
+    border-radius: 2em;
+    color: #CF9FFF;
+}
+
+div#contact div.contact-me div.info-sec form textarea:hover {
+    border-color: #DA70D6;
+    box-shadow: 3px 4px 5px #DA70D6;
+    transition: all 0.2s ease-in-out;
+}
+
+div#contact div.contact-me div.info-sec form input.btn {
+    border: 2px solid #CF9FFF;
+    border-radius: 1em;
+    margin: 1.5em 11.5em;
+    margin-right: 1.3em;
+    background-color: transparent;
+    width: 10em;
+    color: #CF9FFF;
+}
+
+div#contact div.contact-me div.info-sec form input.btn:hover {
+    border-color: #DA70D6;
+    box-shadow: 3px 3px 4px #DA70D6;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Media Queuries */
+@media screen and (max-width: 768px) and (min-width: 0px) {
+
+    /* Navbar Section */
+    div#navbar {
+        padding: 1em 0;
+    }
+
+    div#navbar {
+        width: 38em;
+    }
+
+    div#navbar div#logo {
+        display: none;
+    }
+
+    div#navbar div#navlist {
+        padding: 0 4em;
+    }
+
+
+    /* Home Section */
+    div#home {
+        flex-direction: column-reverse;
+        width: 38em;
+        overflow-x: hidden;
+    }
+
+    div#home div#info {
+        margin: 1em 2em;
+    }
+
+    div#home div#info div.text h1 {
+        font-size: 3em;
+    }
+
+    div#home div#info div.text h3 {
+        font-size: 2em;
+    }
+
+    div#home div#info div.text p {
+        font-size: 1.4em;
+        word-spacing: 0.1em;
+    }
+
+    div#home-img {
+        width: 100%;
+    }
+
+    div#home-img div.img-box {
+        width: 23em;
+        height: 23em;
+    }
+
+
+    /* Skills section */
+    div#skills {
+        width: 38em;
+        margin: 4em 0;
+    }
+
+    div#skills div.myskills div label.sk p {
+        font-size: 1.9em;
+        padding: 0.8em 0;
+    }
+
+    div#skills div.myskills div label.sk input {
+        width: 14em;
+    }
+
+
+    /* Projects Section */
+    div#projects {
+        margin: 4em 0;
+        width: 38em;
+    }
+
+    div#projects div#cards-sec div.card {
+        padding: 1em;
+        height: 23em;
+        width: 12em;
+        margin: 1em 0;
+    }
+
+    div#projects div#cards-sec {
+        margin: 4em 0;
+    }
+
+    div#projects div#cards-sec div.card div.image {
+        height: 6em;
+        width: 12em;
+    }
+
+    div#projects div#cards-sec div.card h3 {
+        padding: 0.8em 0;
+        font-size: 1.1em;
+    }
+
+    div#projects div#cards-sec div.card p {
+        padding-bottom: 1.4em;
+        font-size: 0.9em;
+    }
+
+
+    /* Contact Section */
+    div#contact {
+        margin: 4em 0;
+        width: 38em;
+    }
+
+    div#contact div.contact-me {
+        margin: 4em 0em;
+    }
+
+    div#contact div.contact-me div.image-sec {
+        display: none;
+    }
+
+    div#contact div.contact-me div.info-sec {
+        height: 24em;
+        width: 24em;
+        margin: 0 6em;
+    }
+
+    div#contact div.contact-me div.info-sec form input.btn {
+        margin: 2em 3em;
+        width: 17em;
+    }
+}
+
+@media screen and (max-width: 820px) and (min-width: 768px) {
+    div#navbar {
+        width: 100%;
+    }
+
+    div#navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    div#navbar div#navlist ul li {
+        padding: 0.3em 1.8em;
+        font-size: 1.4em;
+    }
+
+    div#home {
+        width: 100%;
+    }
+
+    div#home-img div.img-box {
+        width: 25em;
+        height: 25em;
+        margin: 0 4em;
+    }
+
+    div#skills {
+        width: 100%;
+    }
+
+    div#skills div.myskills div label.sk input {
+        width: 16em;
+    }
+
+    div#skills div.myskills div label.sk p {
+        font-size: 2em;
+    }
+
+    div#projects {
+        width: 100%;
+    }
+
+    div#projects div#cards-sec {
+        margin: 4em 0.8em;
+    }
+
+    div#projects div#cards-sec div.card {
+        padding: 1.1em;
+        height: 26em;
+        width: 13em;
+        margin: 1em;
+    }
+
+    div#projects div#cards-sec div.card div.image {
+        height: 8em;
+        width: 13em;
+    }
+
+    div#projects div#cards-sec div.card h3 {
+        font-size: 1.2em;
+    }
+
+    div#projects div#cards-sec div.card p {
+        font-size: 1em;
+    }
+
+    div#projects div#cards-sec div.card a {
+        font-size: 1em;
+    }
+
+    div#contact {
+        width: 100%;
+    }
+
+    div#contact div.contact-me div.info-sec {
+        margin: 0px 8em;
+    }
+
+    div#contact div.contact-me div.info-sec form input {
+        padding: 1em;
+        margin: 1em 0;
+        width: 21em;
+        font-size: 1.2em;
+    }
+
+    div#contact div.contact-me div.info-sec form textarea {
+        padding: 1em;
+        margin: 1em 0;
+        width: 21em;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 820px) {
+    body {
+        width: 100%;
+    }
+
+    div#home div#info {
+        margin: 12em 4em;
+        margin-right: 2em;
+    }
+
+    div#home-img {
+        margin: 13em 3em;
+    }
+
+    div#projects div#cards-sec div.card {
+        margin: 1em;
+        height: 27em;
+    }
+
+    div#contact div.contact-me div.info-sec {
+        margin: 0;
+    }
+
+    div#contact div.contact-me div.image-sec {
+        height: 21em;
+        width: 23em;
+        margin-right: 0.9em;
+    }
+}
+
+@media screen and (max-width: 2180px) and (min-width: 1024px) {
+    div#home-img {
+        margin: 7em 6em;
+    }
+
+    div#home-img div.img-box {
+        width: 20em;
+        height: 20em;
+    }
+
+    div#skills div.myskills div label.sk p {
+        font-size: 2.1em;
+    }
+
+    div#skills div.myskills div label.sk input {
+        width: 16em;
+    }
+
+    div#projects div#cards-sec div.card {
+        padding: 1.5em;
+        height: 32em;
+        width: 16em;
+    }
+
+    div#projects div#cards-sec div.card h3 {
+        font-size: 1.5em;
+    }
+
+    div#projects div#cards-sec div.card div.image {
+        height: 10em;
+        width: 16em;
+    }
+
+    div#projects div#cards-sec div.card p {
+        font-size: 1.1em;
+    }
+
+    div#contact div.contact-me div.info-sec {
+        margin: 0px 1em;
+    }
+
+    div#contact div.contact-me div.image-sec {
+        height: 24em;
+        width: 25em;
+    }
+}
+
+@media screen and (width=1024px) {
+    div#home div#info {
+        margin: 7em 4em;
+    }
+
+}
