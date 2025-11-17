@@ -31,19 +31,15 @@
         <div id="info">
             <div class="text">
                 <h1>Muhammad Aarish</h1>
-                <h3>Frontend Developer</h3>
-                <p>I'm a passionate front-end developer dedicated to crafting engaging and user-friendly web experiences. I thrive on transforming designs into clean, efficient, and accessible code, with a strong focus on usability and performance. I'm proficient in HTML, CSS, and JavaScript, and I'm always eager to learn and explore the latest technologies to create seamless and intuitive interfaces that delight users.</p>
+                <h3></h3>
+                <p>"I'm a passionate MERN Stack Developer dedicated to building fast, secure, and scalable full-stack applications. I specialize in crafting intuitive React interfaces, powerful Node/Express APIs, and optimized MongoDB data models. My workflow blends clean code, reusable components, and RESTful architecture to deliver seamless end-to-end experiences. I focus on responsive design, state management, authentication, and real-time features. With every project, my goal is to combine performance with elegance—creating digital solutions that look great and work even better."</p>
             </div>
 
             <div class="sub-section">
-                <div class="btn">
-                    <p>See My Work</p>
-                </div>
-
-                <div class="sub-icons"><i class="fa-brands fa-github"></i></div>
-                <div class="sub-icons"><i class="fa-brands fa-linkedin-in"></i></div>
-                <div class="sub-icons"><i class="fa-brands fa-twitter"></i></div>
-                <div class="sub-icons"><i class="fa-brands fa-facebook"></i></div>
+                <div class="sub-icons"><a href="https://github.com/aarish-irfan"><i class="fa-brands fa-github"></i></a></div>
+                <div class="sub-icons"><a href="https://www.linkedin.com/in/muhammad-aarish-0188a7293/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                <div class="sub-icons"><a href="https://www.facebook.com/profile.php?id=100069475473987"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="sub-icons"><a href=""><i class="fa-brands fa-twitter"></i></a> </div>
             </div>
         </div>
 
@@ -60,39 +56,40 @@
             <div class="col-1">
                 <label for="" class="sk">
                     <p>HTML <span><i class="fa-brands fa-html5" id="html"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="95" disabled>
                 </label>
 
                 <label for="" class="sk">
                     <p>CSS <span><i class="fa-brands fa-css3-alt" id="css"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="85" disabled>
-                </label>
-
-                <label for="" class="sk">
-                    <p>BootStrap<span><i class="fa-brands fa-bootstrap" id="bs"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="55" disabled>
                 </label>
 
                 <label for="" class="sk">
                     <p>JavaScript <span><i class="fa-brands fa-square-js" id="js"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="55" disabled>
+                </label>
+
+                <label for="" class="sk">
+                    <p>REACT JS <span><i class="fa-brands fa-react" id="react"></i></span></p>
+                </label>
+
+                <label for="" class="sk">
+                    <p>Node JS <span><i class="fa-brands fa-node-js" id="node"></i></span></p>
                 </label>
             </div>
 
             <div>
                 <label for="" class="sk">
                     <p>Python <span><i class="fa-brands fa-python" id="py"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="40" disabled>
                 </label>
 
                 <label for="" class="sk">
                     <p>Java <span><i class="fa-brands fa-java" id="java"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="40" disabled>
                 </label>
 
                 <label for="" class="sk">
                     <p>MySQL <span><i class="fa-solid fa-database" id="mysql"></i></span></p>
-                    <input type="range" step="1" min="1" max="100" value="60" disabled>
+                </label>
+                
+                <label for="" class="sk">
+                    <p>BootStrap<span><i class="fa-brands fa-bootstrap" id="bs"></i></span></p>
                 </label>
             </div>
         </div>
@@ -124,11 +121,11 @@
             </div>
             <div class="project3 card">
                 <div class="image"></div>
-                <h3>Analog Clock</h3>
-                <p>"This web-based analog clock, built with HTML, CSS, and JavaScript, accurately displays the current time with smoothly animated hands. JavaScript dynamically updates hand positions, while CSS transforms create the rotation effect."
+                <h3>Tourist Web</h3>
+                <p>"A responsive tourism website that helps users explore destinations through attractive cards and smooth navigation. Designed with HTML &CSS to provide a simple, engaging travel-exploration experience."
                 </p>
                 <div class="btn">
-                    <a href="./projects/car animated web/index.html">See My Work</a>
+                    <a href="./projects/tourist web/index.html">See My Work</a>
                 </div>
             </div>
         </div>
@@ -153,6 +150,50 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // ===== TYPING ANIMATION FOR INTRO =====
+       const roles = ["MERN Stack Developer", "UI/UX Designer", "SEO Optimization"];
+       let roleIndex = 0;
+       let charIndex = 0;
+       let isDeleting = false;
+       const roleElement = document.querySelector("h3");
+       const typeSpeed = 100; 
+       const deleteSpeed = 50; 
+       const delayBetweenRoles = 2000; 
+
+function typeRole() {
+  const currentRole = roles[roleIndex];
+  
+  if (isDeleting) {
+    // Deleting characters
+    roleElement.textContent = currentRole.substring(0, charIndex - 1);
+    charIndex--;
+    
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      setTimeout(typeRole, 500);
+      return;
+    }
+  } else {
+    // Typing characters
+    roleElement.textContent = currentRole.substring(0, charIndex + 1);
+    charIndex++;
+    
+    if (charIndex === currentRole.length) {
+      isDeleting = true;
+      setTimeout(typeRole, delayBetweenRoles);
+      return;
+    }
+  }
+  
+  setTimeout(typeRole, isDeleting ? deleteSpeed : typeSpeed);
+}
+
+// Start the animation
+typeRole();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My/Outdoor/Website|www.venture.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">VENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>Tours</li>
+            <li class="btn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="menubtn.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Unleash Your Inner Explorer</h2>
+            <div class="line"></div>
+            <h1>A Treasure Trove</h1>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events -->
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="hiking.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                    <p>Experience the thrill of trekking to the foot of the world's highest peak. Enjoy breathtaking mountain views, diverse landscapes, and a unique cultural experience.</p>
+                    <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="walking.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                    <p>Enjoy leisurely walks through scenic landscapes. Discover hidden gems, experience local culture, and stay active while on vacation.</p>
+                    <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore the World</h1>
+            <div class="line"></div>
+            <p>Venture beyond your comfort zone and discover the beauty of our planet. From bustling cities to serene landscapes, experience diverse cultures, taste exotic cuisines, and create unforgettable memories.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Discover Your Next Destination</h1>
+                <div class="line"></div>
+                <p>Ready to explore the world? From bustling cities to serene landscapes, we have the perfect destination for you. Experience diverse cultures, taste exotic cuisines, and create unforgettable memories. Our curated tours offer comfort, convenience, and adventure. Start planning your dream vacation today and discover your next adventure.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img1.jpg" alt="">
+                    <img src="img2.jpg" alt="">
+                    <img src="img3.jpg" alt="">
+                    <img src="img4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p> <i class="ri-home-4-fill"></i> 992 Fifth Cir, Palm Beach 79124, FL, USA | <i class="ri-phone-fill"></i> 1-234-456-892 | <i class="ri-mail-send-fill"></i> my@gmail.com | 2024 Outdoor Adventures.</p>
+        <p>Copyrights &copy; [www.AarishCraveness.com] All rights reserved!</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>

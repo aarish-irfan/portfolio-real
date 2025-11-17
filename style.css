@@ -91,7 +91,7 @@ div#home-img {
 }
 
 div#home-img div.img-box {
-    background: url(./Images/img3-removebg-preview.png) no-repeat center center/cover;
+    background: url(./Images/Portfolio-removebg-preview.png) no-repeat center center/cover;
     width: 18em;
     height: 18em;
     border: 2px solid transparent;
@@ -127,27 +127,27 @@ div#home div#info div.text p {
 div#home div#info div.sub-section {
     display: flex;
 }
-
+/* 
 div#home div#info div.sub-section div.btn {
     border: 2px solid #CF9FFF;
     border-radius: 1em;
     margin: 0.2em 0.2em;
     margin-right: 1.3em;
     background-color: transparent;
-}
+} */
 
-div#home div#info div.sub-section div.btn:hover {
+/* div#home div#info div.sub-section div.btn:hover {
     border-color: #DA70D6;
     box-shadow: 3px 3px 4px #DA70D6;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-}
+} */
 
-div#home div#info div.sub-section div.btn p {
+/* div#home div#info div.sub-section div.btn p {
     text-align: center;
     padding: 0.5em 1em;
     color: #CF9FFF;
-}
+} */
 
 div#home div#info div.sub-section div.sub-icons {
     border: 2px solid transparent;
@@ -189,8 +189,8 @@ div#skills div.myskills {
 }
 
 div#skills div.myskills div label.sk p {
-    font-size: 1.8em;
-    padding: 1em 0;
+    font-size: 1.5em;
+    padding: 0.8em 0;
     color: #CF9FFF;
 }
 
@@ -201,37 +201,47 @@ div#skills div.myskills div label.sk input {
 
 div#skills div.myskills div label.sk p span i#html {
     color: #e34f26;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#css {
     color: #21759B;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#bs {
     color: #0d6efd;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#js {
     color: #F0DB4F;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#py {
     color: #FFD43B;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#java {
     color: #FFA518;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
 }
 
 div#skills div.myskills div label.sk p span i#mysql {
     color: #00758F;
-    padding: 0 0.3em;
+    padding: 0 0.2em;
+}
+
+div#skills div.myskills div label.sk p span i#react {
+    color: #61DAFB;
+    padding: 0 0.2em;
+}
+
+div#skills div.myskills div label.sk p span i#node {
+    color: #3C873A;
+    padding: 0 0.2em;
 }
 
 div#projects {
@@ -255,7 +265,7 @@ div#projects div#cards-sec {
 
 div#projects div#cards-sec div.card {
     border: 2px solid #CF9FFF;
-    padding: 2em;
+    padding: 2.4em;
     height: 26em;
     width: 15em;
     border-radius: 2em;
@@ -476,7 +486,7 @@ div#contact div.contact-me div.info-sec form input.btn:hover {
     }
 
     div#projects div#cards-sec div.card {
-        padding: 1em;
+        padding: 4em;
         height: 23em;
         width: 12em;
         margin: 1em 0;
@@ -662,7 +672,7 @@ div#contact div.contact-me div.info-sec form input.btn:hover {
     }
 
     div#skills div.myskills div label.sk p {
-        font-size: 2.1em;
+        font-size: 1.9em;
     }
 
     div#skills div.myskills div label.sk input {
